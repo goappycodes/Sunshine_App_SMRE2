@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.swatiag1101.sunshine_new_v1">
+
+    <com.swatiag1101.sunshine_new_v1.LocationEditTextPreference android:id="@+id/location" android:title="@string/location"
+        android:key="@string/location" custom:minlength="3"/>
+
+    <ListPreference android:id="@+id/temp_units" android:title="@string/temp"
+        android:key="@string/temp" android:defaultValue="@string/temp_default"
+        android:entryValues="@array/temp" android:entries="@array/temp_value"></ListPreference>
+
+    <ListPreference
+        android:title="@string/pref_art_pack_label"
+        android:key="@string/pref_art_pack_key"
+        android:defaultValue="@string/pref_art_pack_sunshine"
+        android:entryValues="@array/pref_art_pack_values"
+        android:entries="@array/pref_art_pack_options" />
+    <CheckBoxPreference
+        android:title="@string/pref_enable_notifications_label"
+        android:key="@string/pref_enable_notifications_key"
+        android:summaryOff="@string/pref_enable_notifications_false"
+        android:summaryOn="@string/pref_enable_notifications_true"
+        android:defaultValue="@string/pref_enable_notifications_default" />
+</PreferenceScreen>
